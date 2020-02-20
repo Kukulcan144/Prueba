@@ -1,0 +1,60 @@
+.my-moments{
+ text-align: center;
+    margin-bottom: 20;
+}
+.my-moments .container--flex{
+    align-items: flex-start;
+}
+.my-moments__title{
+    font-family: 'Playfair Display SC', serif;
+    color: cornflowerblue;
+    font-weight: bold;
+    font-size: 1.8em;
+    margin-bottom: 10px;
+}
+.my-moments__img{
+    width:  200px;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 50%;
+    margin: auto;
+    margin-bottom: 20px;
+}
+.my-moments__txt{
+    padding: 10px;
+    text-align: justify;
+}
+
+@media screen and (min-width:480px){
+    .my-moments__img{
+        width: 150px;
+        height: 150px;
+    }
+    
+}
+    
+@media screen and (min-width:768px){
+    .my-moments__img{
+        width: 220px;
+        height: 220px;
+    }
+    
+}
+    
+@media screen and (min-width:1024px){
+    .my-moments__img{
+        width: 320px;
+        height: 320px;
+    }
+    
+    
+}
+
+@media screen and (min-width:1600px){
+    .my-moments__img{
+        width: 420px;
+        height: 420px;
+    }
+    
+    
+}

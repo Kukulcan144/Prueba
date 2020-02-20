@@ -1,0 +1,591 @@
+/*@import url('https://fonts.googleapis.com/css?family=Playfair+Display+SC|Roboto+Condensed');*/
+@font-face{
+    font-family:"RNS";
+    src: url(../font/RNS_Camelia.otf);
+}
+@font-face{
+    font-family:"Top";
+    src: url(../font/TopModern.ttf);
+}
+@font-face{
+    font-family:"Montserrat";
+    src: url(../font/Montserrat-Regular.ttf);
+}
+@font-face{
+    font-family:"playfair";
+    src: url(../font/PlayfairDisplaySC-Regular.ttf);
+}
+@font-face{
+    font-family:"Roboto";
+    src: url(../font/RobotoCondensed-Bold.ttf);
+}
+@font-face{
+    font-family:"Napoleon";
+    src: url(../font/Napoleon-Bold.ttf);
+}
+@font-face{
+    font-family:"libertine";
+    src: url(../font/LinLibertine_R.ttf);
+}
+
+*{
+    box-sizing: border-box;
+}
+body{
+    font-family: 'Roboto Condensed', sans-serif;
+    margin: 0;
+    
+}
+/*----------------------Estilos base-----------------*/
+img{
+    display: block;
+    width: 100%;
+    max-width: 100%;
+    
+}
+h1, h2, h3, h4, h5, h6 {
+    margin: 0;
+    
+}
+
+.container {
+    width: 100%;
+    margin: auto;
+    
+}
+
+.container--flex{
+    display: flex;
+    flex-wrap:  wrap;
+    justify-content: space-between;
+    align-items: center;
+    
+}
+.column{
+    width: 100%;
+    
+}
+.column__txt1{
+    font-family: libertine, serif;
+}
+/*------------- estilos header-----------------------*/
+
+.main-header{
+    width: 100%;
+}
+.logo{
+    font-size: 1.8em;
+    color: #060302;
+    padding: 10px;
+    font-family: 'Playfair', serif; 
+    font-weight: 100;
+    
+    
+}
+.main-header__contactInfo__phone{
+    background: #2D486C;
+    color: white;
+    margin: 0 auto;
+    padding:  14px;
+}
+.icon-phone{
+    color: white;
+}
+.icon-location{
+}
+
+.main-header__contactInfo__address{
+    padding: 10px;
+    margin: 0;
+}
+
+.main-header [class*="icon-"]{
+    position: relative;
+    top: -22px;
+    right: 4px;
+   
+
+    
+}
+/*------------------------------etilos del menu------------------------------------------------*/
+ul, ol {
+    list-style: none;
+}
+.main-nav{
+    width: 100%;
+    position: relative;
+    z-index: 2000;
+    padding: 10px;
+    
+}
+.menu a span {
+    
+    margin-left: 10px;
+    
+}
+
+.icon-menu {
+    display: block;
+    color: white;
+    border: 1px solid white;
+    border-radius: 3px;
+    width: 40px;
+    height: 50;
+    line-height: 45px;
+    text-align: center;
+    cursor: pointer;
+    font-size: 1.5em;
+    
+}
+
+.social-icon {
+    display: flex;
+    justify-content: space-between;
+    
+}
+.social-icon [class*="icon"]{
+    color: black;
+    margin-left: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.3em;
+    width: 35px;
+    height: 35px;
+    background: white;
+    border-radius: 50%;
+    
+}
+
+.social-icon__link{
+    text-decoration: none;
+    
+}
+
+.menu{
+    position: absolute;
+    top: 60px;
+    left: 0;
+    width: 100%;
+    background: rgba(0,0,0,.80);
+    padding: 0;
+    margin: 0;
+    list-style: none;
+    text-align: center;
+    height: 0;
+    overflow: hidden;
+    transition: height .3s linear;
+    
+}
+
+.menu__link{
+    display: block;
+    padding: 15px;
+    color: white;
+    text-decoration: none;
+    
+}
+
+ 
+.menu__link:hover{
+    background: #2D486C;
+}
+
+.menu__link--select {
+    background: #2D486C;
+}
+
+.mostrar{
+    height: 330px;
+}
+
+/*---------cambio en el menu subindice--------*/
+
+
+.main-nav li ul{
+    display: none;
+    position: absolute;
+    min-width: 140px;
+    color: white;
+    
+}
+
+.main-nav li:hover > ul {
+    display: block;
+    text-decoration: none;
+    background: rgba(0,0,0,.80);
+    position: absolute;
+
+}
+
+.main-nav li ul li {
+        position: relative;
+        margin-left: -56px;
+}
+
+  .main-nav ul li:hover > ul {
+    display: none;
+   }
+   
+  .main-nav ul ul {
+    background: rgba(0,0,0,0.9);
+   }
+    
+    .menu a span{
+        position: absolute;
+        right: 5px;
+    } 
+
+/*---------------estilos del baner----------------------*/
+
+.banner{
+    margin-top: -68px;
+    position: relative;
+       
+}
+
+.banner:before{
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: rgba(0,0,0,0.3);
+    z-index: 1000;
+    top: 0;
+    
+}
+.banner__img{
+    width: 100%;
+    height: 500px;
+    object-fit: cover;
+}
+
+
+
+
+.banner__content{
+    width: 90%;
+    color: white;
+    text-align: center;
+    position: absolute;
+    z-index: 1500;
+    top: 50%;
+    left: 50%;
+    transform: translateX(-50%) translateY(-50%);
+    font-family: 'Playfair Display SC', serif; 
+    font-size: 3.8em;
+    font-weight: bold;
+}
+
+/*----------------Estilos Principales----------------------*/
+
+.group--color .container {
+    background: #2D486C;
+    color: white;
+    padding: 30px;
+    text-align: center;
+}
+.main__title{
+    margin: 24px;
+    font-size: 2.8em;
+    font-family: 'RNS', serif; 
+    font-weight: 100;
+}
+.main__txt{
+    margin: 50px 0;
+    font-size:1.1em;
+    line-height: 1.5;
+}
+.column__title{
+    font-size: 1.3em;
+    
+}
+
+.main__about__decription .column:nth-child(2) {
+    padding: 10px;
+    
+}
+
+.btn{
+    display: block;
+    text-align: center;
+    text-decoration: none;
+    width: 120px;
+    background: #2D486C;
+    color: white;
+    padding: 10px;
+    margin: 10px auto;
+    
+}
+
+.group__title{
+    font-family: 'Playfair Display SC', serif;
+    text-align: center;
+    font-weight: 100;
+    font-size: 1.8em;
+    margin: 30px;
+    
+    
+}
+
+.today-special .column{
+    margin-bottom: 30px;
+    text-align: center;
+    
+}
+
+.today-special__img{
+    margin: auto;
+    max-width: 350px;
+}
+
+.today-special__title{
+    font-size: 1.3em;
+    padding-top: 10px;
+    padding-bottom: 20px;
+}
+.today-special__price{
+    font-size: 1.5em;
+    color: darkolivegreen;
+    font-weight: bold;
+    
+}
+
+/*---------------estilos del footer----------------------------*/
+
+.main-footer{
+    /* height: 1700px; */
+    background: #222;
+    color: white;
+    padding: 10px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    font-size: .8em;
+}
+.main-nav ul li:hover > ul {
+    display: none;
+     
+   }
+.copy{
+    text-align: center;
+    margin: auto;
+    margin-top: 15px;
+}
+
+.main-footer [class*="icon-"]{
+    color: white;
+    text-decoration: none;
+    
+}
+
+.main-footer [class*="icon-"]:before{
+    position: relative;
+    top: 3px;
+    right: 5px;
+}
+
+/*--------------------Tabla de talleres-------------------------------------*/
+
+/*------------------Estilos responsive---------------------*/
+@media screen and (min-width:480px){
+    .logo{
+        color: white;
+    }
+    
+    .main-header__contactInfo {
+      text-align: right;
+    }   
+    .main-header__contactInfo__phone{
+      background: none;
+        
+    }
+    
+    .icon-location{
+       color: white;
+    }
+     
+    
+    .menu a span{
+        position: absolute;
+        right: 5px;
+    } 
+    .main-nav{
+        background: rgba(0,0,0,0.99)
+    }
+    /**/
+    
+  
+     /**/
+    .banner {
+        margin-top: -200px;
+        z-index: -1000;
+    }
+    .banner__img{
+        height: 600px;
+    }
+    .banner__content{
+        font-size: 3em;
+    }
+    .main-nav ul li:hover > ul {
+    display: none;
+        position: static;
+   }
+    .main{
+        padding-bottom: 20px;
+    }
+    .main__about__description .column:nth-child(2) {
+        padding-left: 20px;
+        font-size: .9em;
+    }
+    .main__about__description .btn{
+        margin: 0;
+    }
+   
+    .today-special .column {
+        border: 5px solid #ddd;
+        padding: 5px;
+    }
+    .today-special__img{
+        height: 200px;
+        object-fit: cover;
+    }
+   
+    .main-footer .container--flex{
+        align-items: flex-start;
+    }
+    .column--50 {
+    width: 50%;
+
+    }
+    .column--50-25{
+        width: 50%;
+    }
+    .column--33{
+        width: 33%;
+    }
+    
+}
+
+@media screen and (min-width:768px){
+    .main__title{
+        font-size: 2.2em;
+    }
+    .main__about__description{
+        margin-top: 30px;
+    }
+   
+    .main__about__description .column--50:nth-child(2) {
+        font-size: 1em;
+    }
+    .main__about__description .column--50:nth-child(2) .column__txt{
+        line-height: 30px;
+    }
+    
+    .column--50-25{
+        width: 24.5%;
+    }
+    .group__title{
+        font-size: 2.2em;
+    }
+    /**/
+    
+    /**/
+  .main-nav ul li:hover > ul {
+    display: none;
+        position: static;
+   }
+    
+    .menu a span{
+        position: absolute;
+        right: 5px;
+    } 
+    /**/
+    
+}
+
+@media screen and (min-width:1024px){
+    .container{
+        width: 1000px;
+    }
+    .logo{
+        font-size:  2em;
+        padding: 0;
+    }
+    .main-header__contactInfo__phone, .main-header__contactInfo__address{
+        padding-right: 0;
+        font-size: 1.15em;
+    }
+    .main-nav{
+        padding: 0;
+    }
+    .banner_content{
+        font-size: 2.5em;
+    }
+    .icon-menu{
+        display: none;
+    }
+      .menu a span{
+        position: relative;
+    } 
+    .menu{
+        position: static;
+        display: flex;
+        height: auto;
+        width: auto;
+    }
+    
+    .menu__link{
+        padding: 20px;
+    }
+    /*-----este-------*/
+    .main-nav ul ul {
+    background: rgba(0,0,0,0.9);
+   }
+    
+    .main-nav ul li:hover > ul {
+    display: block;
+        position: absolute;
+   }
+
+    .group--color .container{
+        margin-top: 30px;
+        margin-bottom: 30px;
+        padding: 20px;
+    }
+    .main__title{
+        font-size: 2.3em;
+    }
+    .main__about__description .column--50:nth-child(2) .column__txt{
+        line-height: 45px;
+    }
+    .today-special__title{
+        font-size: 1.4em;
+    }
+    .main-footer{
+        padding-top: 30px;
+        padding-bottom: 30px;
+    }
+    
+}
+
+@media screen and (min-width:1600px){
+    .container{
+        width: 1400px;
+    }
+    .banner__img{
+        height: 750px;
+    }
+    .menu a span{
+        position: relative;
+    } 
+    .main__about__description .column:nth-child(1) img {
+        width: 100%;
+        height: 350px;
+        object-fit: cover;
+    }
+    .today-special__img{
+        height: 300px;
+    }
+    
+}
+
